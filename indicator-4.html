@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kill Zone EMA Confluence | BanteeX</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .indicator-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 8rem 2rem;
+            background: var(--bg-primary);
+            position: relative;
+            overflow: hidden;
+        }
+        .indicator-page::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 50% 50%, rgba(255,107,0,0.05) 0%, transparent 70%);
+        }
+        .indicator-icon {
+            font-size: 5rem;
+            margin-bottom: 2rem;
+            animation: tridentGlow 3s ease-in-out infinite;
+        }
+        .indicator-page h1 {
+            font-family: var(--font-display);
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            color: var(--accent-orange);
+            margin-bottom: 1rem;
+            letter-spacing: 0.1em;
+        }
+        .indicator-page p {
+            font-family: var(--font-body);
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin-bottom: 3rem;
+            line-height: 1.8;
+        }
+        .back-link {
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+            color: var(--accent-orange);
+            text-decoration: none;
+            letter-spacing: 0.1em;
+            padding: 1rem 2rem;
+            border: 1px solid var(--accent-orange);
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .back-link:hover {
+            background: var(--accent-orange);
+            color: #000;
+            box-shadow: 0 0 30px rgba(255, 107, 0, 0.4);
+        }
+        .coming-soon {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 2rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <div class="indicator-page">
+        <div class="indicator-icon">📈</div>
+        <h1>Kill Zone EMA Confluence</h1>
+        <p>EMA alignment signals within optimal trading windows. Combines multiple EMA periods for high-confluence entry signals.</p>
+        <a href="index.html" class="back-link">← Back to Home</a>
+        <div class="coming-soon">Full Documentation Coming Soon</div>
+    </div>
+</body>
+</html>
